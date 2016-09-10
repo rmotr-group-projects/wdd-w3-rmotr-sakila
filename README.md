@@ -23,6 +23,6 @@ As we don't want to loose the DB data while running regular Django test cases, w
 
 We already provide a few assignments that you will need to implement. Even though, we also ask you to add a few more assignments with interesting queries or stats that you can imagine. You will need to add both the assignments and tests.
 
-### read only
+### Read only
 
 All the query tests we implemented are based in the initial status of the DB. If you write or remove data from it, they will probably start failing. Try to not perform any write action on the DB. Just use it to execute your read-only queries.
