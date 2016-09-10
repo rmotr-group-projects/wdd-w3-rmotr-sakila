@@ -36,7 +36,8 @@ def assignment_5():
     """
     Which is the most popular FilmCategory?
     """
-    pass
+    return Category.objects.annotate(num_rentals=Count('filmcategory__film__inventory__rental')) \
+        .order_by('-num_rentals')[0].name
 
 
 def assignment_6():
