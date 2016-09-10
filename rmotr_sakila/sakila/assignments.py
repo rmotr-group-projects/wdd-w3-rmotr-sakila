@@ -7,7 +7,7 @@ def assignment_1():
     """
     How many Films do we have in the DVD store?
     """
-    pass
+    return Film.objects.count()
 
 
 def assignment_2():
