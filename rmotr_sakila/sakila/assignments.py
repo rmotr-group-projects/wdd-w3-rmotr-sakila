@@ -68,4 +68,4 @@ def assignment_9():
     """
     Which is the most rented Film?
     """
-    pass
+    return str(Film.objects.annotate(num_rentals=Count('inventory__rental')).order_by('-num_rentals')[0])
