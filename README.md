@@ -19,6 +19,14 @@ The goal of this group work is to implement the assignments listed in `sakila/as
 
 As we don't want to loose the DB data while running regular Django test cases, we implemented a way around to evaluate if your assignment solutions are valid. In `sakila/management/commands` you will find a `runtests` custom command. That command is going execute each of the assignments you implemented, and will compare the result with the expected one. If all assignments are working well, you will see a message like `All tests passing!` in the terminal.
 
+To run tests, just execute the `runtests` custom command, like this:
+
+```
+$ django-admin runtests
+```
+
+Make sure you have properly configured the `PYTHONPATH` and `DJANGO_SETTINGS_MODULE` env variables.
+
 ### Add more assignments
 
 We already provide a few assignments that you will need to implement. Even though, we also ask you to add a few more assignments with interesting queries or stats that you can imagine. You will need to add both the assignments and tests.
