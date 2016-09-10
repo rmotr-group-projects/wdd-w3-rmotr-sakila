@@ -45,7 +45,8 @@ def assignment_6():
     How much has earned each store renting movie films?
     Return a list of tuples, each containing (<store-id>, <earnings-in-decimal>)
     """
-    pass
+    return [(store.store_id, store.earnings) for store in
+            Store.objects.all().annotate(earnings=Sum('staff__payment__amount'))]
 
 
 def assignment_7():
