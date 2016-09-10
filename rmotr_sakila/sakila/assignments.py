@@ -21,7 +21,7 @@ def assignment_3():
     """
     List the full name of all Staff members that live in Canada
     """
-    return [staff.first_name + " " + staff.last_name for staff in
+    return [str(staff) for staff in
             Staff.objects.filter(address__city__country__country='Canada')]
 
 
