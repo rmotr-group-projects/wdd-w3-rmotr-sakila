@@ -11,7 +11,7 @@ EXPECTED_RESULTS = {
     'assignment_3': ['Mike Hillyer'],
     'assignment_4': 'ELEANOR HUNT',
     'assignment_5': 'Sports',
-    'assignment_6': [(1, Decimal('33679.79')), (2, Decimal('33726.77'))],
+    'assignment_6': [(1, Decimal('33489.47')), (2, Decimal('33927.04'))],
     'assignment_7': [u'Aurora', u'London', u'Saint-Denis', u'Cape Coral'],
     'assignment_8': [
         (u'English', 1000),
