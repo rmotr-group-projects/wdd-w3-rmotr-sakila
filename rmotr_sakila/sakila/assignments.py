@@ -109,3 +109,16 @@ def assignment_9():
         rental_count=Count('inventory__rental')
     ).order_by('-rental_count')
     return rental_count_by_film[0].title
+
+
+def assignment_10():
+    """
+    Which customer has the most expensive taste in Films?
+    Only consider customers who have rented 5 or more films.
+    """
+
+def assignment_11():
+    """
+    In which month are the most films rented on average?  Least?
+    On which day?
+    """
