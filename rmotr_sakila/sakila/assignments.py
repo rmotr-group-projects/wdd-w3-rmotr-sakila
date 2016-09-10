@@ -53,7 +53,8 @@ def assignment_7():
     """
     List the first 4 cities where customers rent more Films
     """
-    pass
+    return [str(city) for city in
+            City.objects.all().annotate(num_rentals=Count('address__customer__rental')).order_by('-num_rentals')[:4]]
 
 
 def assignment_8():
