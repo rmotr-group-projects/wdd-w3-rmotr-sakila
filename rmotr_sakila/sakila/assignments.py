@@ -29,7 +29,7 @@ def assignment_4():
     """
     Who is the customer that has rented more Films?
     """
-    pass
+    return str(Customer.objects.annotate(num_rentals=Count('rental')).order_by('-num_rentals')[0])
 
 
 def assignment_5():
