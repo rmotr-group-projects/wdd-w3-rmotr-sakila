@@ -61,7 +61,7 @@ def assignment_8():
     """
     List how many Films are there for each language.
     """
-    pass
+    return [(lang.name, lang.num_films) for lang in Language.objects.annotate(num_films=Count('film'))]
 
 
 def assignment_9():
