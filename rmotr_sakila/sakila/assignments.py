@@ -15,6 +15,8 @@ def assignment_2():
     How many Films are rented at the moment?
     """
     pass
+    # Rental.objects.values('return_date').annotate(Count('rental_id'))
+    # Rental.objects.filter(return_date=None).count()
     # test = Rental.objects.filter(
     # return Rental.objects.filter(return_date__lt = )
     # return Rental.objects.filter(return_date__gt=).count()
